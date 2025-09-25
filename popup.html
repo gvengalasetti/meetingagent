@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calendar Meeting Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📅 Meeting Calendar</h1>
+        
+        <!-- Calendar Widget -->
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <button id="prevMonth" class="nav-btn">‹</button>
+                <h2 id="currentMonth"></h2>
+                <button id="nextMonth" class="nav-btn">›</button>
+            </div>
+            <div class="calendar-grid" id="calendarGrid">
+                <!-- Calendar days will be generated here -->
+            </div>
+        </div>
+        
+        <!-- Selected Date Info -->
+        <div class="selected-date" id="selectedDate">
+            <h3>Select a date to view meetings</h3>
+        </div>
+        
+        <!-- Meetings List -->
+        <div class="meetings-container" id="meetingsContainer">
+            <!-- Meetings will be displayed here -->
+        </div>
+        
+        <!-- Meeting Research Details -->
+        <div class="research-container" id="researchContainer" style="display: none;">
+            <div class="research-header">
+                <h3>🔍 Meeting Research</h3>
+                <button id="closeResearch" class="close-btn">×</button>
+            </div>
+            <div class="research-content" id="researchContent">
+                <!-- Research details will be displayed here -->
+            </div>
+        </div>
+        
+        <!-- Loading indicator -->
+        <div class="loading" id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Loading meetings...</p>
+        </div>
+        
+        <!-- Status messages -->
+        <div class="status" id="status"></div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
